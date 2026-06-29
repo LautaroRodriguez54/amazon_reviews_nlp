@@ -8,17 +8,6 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
-data/raw/
-data/interim/
-data/processed/
-
-# Trained models
-models/
-*.pt
-*.pth
-*.pkl
-
 # VS Code
 .vscode/
 
