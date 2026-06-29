@@ -1,0 +1,28 @@
+# Data manipulation
+pandas>=2.2
+numpy>=2.0
+pyarrow>=18.0
+
+# Visualization
+matplotlib>=3.9
+seaborn>=0.13
+wordcloud>=1.9
+
+# NLP
+nltk>=3.9
+spacy>=3.8
+datasets>=4.0
+transformers>=4.50
+huggingface_hub>=0.30
+
+# Machine Learning
+scikit-learn>=1.6
+
+# Deep Learning
+torch>=2.5
+
+# Utilities
+tqdm>=4.66
+jupyter>=1.1
+notebook>=7.3
+ipykernel>=6.29
