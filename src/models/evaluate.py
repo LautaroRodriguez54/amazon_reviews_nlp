@@ -43,7 +43,8 @@ def evaluate_model(
     device,
 ):
     """
-    Calcula las métricas principales.
+    Evalúa el modelo sobre un conjunto de datos y devuelve las principales
+    métricas de clasificación junto con las etiquetas reales y predichas.    
     """
 
     y_true, y_pred = predict(
@@ -57,15 +58,13 @@ def evaluate_model(
         y_pred,
     )
 
-    print(f"Accuracy: {accuracy:.4f}\n")
-
-    print(classification_report(
+    report = classification_report(
         y_true,
         y_pred,
         digits=4,
-    ))
+    )
 
-    return y_true, y_pred
+    return accuracy, report, y_true, y_pred
 
 
 def plot_confusion_matrix(

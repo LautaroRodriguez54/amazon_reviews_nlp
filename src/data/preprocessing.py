@@ -111,3 +111,16 @@ def preprocess_text(text: str) -> str:
     text = join_tokens(tokens)
 
     return text
+
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
+
+def lemmatize_spacy(tokens: list[str]) -> list[str]:
+    """
+    Lematiza una lista de tokens utilizando spaCy.
+    """
+
+    doc = nlp(" ".join(tokens))
+
+    return [token.lemma_ for token in doc]
